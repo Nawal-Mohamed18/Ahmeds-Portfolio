@@ -1,0 +1,24 @@
+:root {
+    --primary: #1B2A41;
+    --secondary: #4F8FF7;
+    --background: #F5F7FA;
+    --text: #1E1E1E;
+    --accent: #7FE1D6;
+}
+header {
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+
+body{
+    background-color:#B8B8B8;
+    
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
