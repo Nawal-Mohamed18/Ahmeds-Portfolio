@@ -168,10 +168,39 @@
             margin-bottom: 10px;
             color: #1A2A4F;
         }
+        /* SEE MORE BUTTON */
+
+        .see-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 90px;
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            font-weight: 500;
+            color: #1A2A4F;
+            border-left: 4px solid #4F6DCE;
+            text-decoration: none;  
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+         /* Hover  */
+        .see-more-btn:hover {
+            color: #4F6DCE;         
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);  
+            transform: translateY(-2px);               
+        }
 
         /* CONTACT */
         #contact {
             text-align: center;
+
         }
 
         .contact-box {
@@ -181,7 +210,8 @@
             margin: auto;
             border-radius: 15px;
             box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-            border-top: 4px solid #4F6DCE;
+            border-left: 4px solid #4F6DCE;
+            border-right: 4px solid #4F6DCE;
         }
 
         .contact-box p {
@@ -189,13 +219,49 @@
             margin: 10px 0;
             color: #333;
         }
+        .form-input{
+            gap:18px;
+            width: 100%;
+            padding: 10px;
+            border-color: #1A2A4F;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+                 
+/* Submit button */
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 10px;
+    background: #1A2A4F;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 500;
+    color: #F5F7FA;
+    border-left: 4px solid #4F6DCE;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover for submit button */
+.submit-btn:hover {
+    color: #4F6DCE;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+
     </style>
 </head>
 
 <body>
 
 <header>
-    <h2>MyPortfolio</h2>
+    <h2>Ahmed's Portfolio</h2>
     <nav>
         <a href="#hero">Home</a>
         <a href="#about">About</a>
@@ -244,32 +310,49 @@
 
         <div class="project-card">
             <img src="images/project 1.jpg" alt="Project 1">
-            <h3>Project One</h3>
-            <p>Waa project aan ku sameeyay anoo adegsanaayo Adobe Illustrator.</p>
+            <h3>(GOLO MEAL)</h3>
+            <p>Waa design aan u sameeyay maqaayad aan real ahayn "Golo Meal". Waxaan ku dhisay project-gaan: Adobe Illustrator. Waxxana geliyay Mockup! </p>
         </div>
 
         <div class="project-card">
             <img src="images/project 2.jpg" alt="Project 2">
-            <h3>Project Two</h3>
-            <p>Waa project aan ku sameeyay anoo adegsanaayo Adobe Illustrator.</p>
+            <h3>(Jummah Mubarak)</h3>
+            <p>Waa poster yar oo aan u sameeyay maalinta barakeysan ee Jumcaha.</p>
         </div>
 
         <div class="project-card">
             <img src="images/project 3.jpg" alt="Project 3">
-            <h3>Project Three</h3>
-            <p>Waa project aan ku sameeyay anoo adegsanaayo Adobe Illustrator.</p>
+            <h3>(Adobe Photoshop vs Illustrator)</h3>
+            <p>Waa poster aan iskugu barbardhigayo Adobe Photoshop iyo Illustrator. Kee baad doorbidaa?</p>
         </div>
 
+        <div class="project-card">
+            <img src="images/project 4.jpeg" alt="Project 4">
+            <h3>(SAQAWE LOGO)</h3>
+            <p>Waa Logo aan u diyaariyay Saaxiibkeey. Waxaan sidoo kale u isticmaalay Adobe Illustrator. Booqo page kiisa si aad u sii ogaato: <a href="https://www.facebook.com/profile.php?id=61581369245419">SAQAWE PAGE</a> </p>
+        </div>
     </div>
+        <a href="projects.html" class="see-more-btn">
+           See more
+           <img src="images/my-icon.png" width="28">
+        </a>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
 
-    <div class="contact-box">
-        <p><strong>Email:</strong> ahmed123@gmail.com</p>
-        <p><strong>Phone:</strong> +252 61 3910872</p>
+  <div class="contact-box">
+
+    <form class="contact-form" action="https://formspree.io/f/xyzzzabc" method="POST">
+         <input type="text" class="form-input" placeholder="Name.."> <br>
+         <input type="email" class="form-input" placeholder="Email.."> <br>
+         <textarea class="form-input" rows="4" placeholder="Message.."></textarea> <br>
+         <button class="submit-btn">
+           Submit
+         </button>
+    </form>
     </div>
 </section>
 
